@@ -1,0 +1,446 @@
+/* Global Styles */
+:root {
+    --primary-color: #0000CC;
+    --text-color: #333333;
+    --light-bg: #ffffff;
+    --spacing-unit: 2rem;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-unit);
+}
+
+/* Header Navigation */
+.main-header {
+    background: var(--light-bg);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem var(--spacing-unit);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin-left: 2rem;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: var(--primary-color);
+}
+/* Footer */
+.main-footer {
+    background-color: var(--text-color);  /* Adding this line */
+    color: var(--light-bg);
+    padding: var(--spacing-unit) 0;
+    margin-top: var(--spacing-unit);
+}
+/* Mobile Menu Toggle Button */
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.mobile-menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: var(--text-color);
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Home Page Styles */
+/* Hero Section */
+.hero {
+    padding: calc(var(--spacing-unit) * 4) var(--spacing-unit);
+    background-color: var(--light-bg);
+    margin-top: 70px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-unit);
+    color: var(--primary-color);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: var(--spacing-unit);
+}
+
+/* Core Values Section */
+.core-values {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-unit);
+    padding: var(--spacing-unit);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.value-card {
+    padding: var(--spacing-unit);
+    text-align: center;
+    background: var(--light-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.value-card h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Call to Action Section */
+.cta {
+    background-color: var(--light-bg);
+    padding: calc(var(--spacing-unit) * 2);
+    text-align: center;
+    margin-top: var(--spacing-unit);
+}
+
+.cta h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: var(--spacing-unit);
+}
+
+/* Page Heroes */
+.service-hero,
+.expertise-hero,
+.team-hero,
+.contact-hero,
+.resources-hero {
+    background-color: var(--primary-color);
+    color: var(--light-bg);
+    padding: calc(var(--spacing-unit) * 3) 0;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.service-motto,
+.contact-intro,
+.resources-intro {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-unit);
+}
+
+/* Services Pages Styles */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-unit);
+    margin: var(--spacing-unit) 0;
+}
+
+.service-card {
+    background: var(--light-bg);
+    padding: var(--spacing-unit);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.service-card h2 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.service-quote {
+    font-style: italic;
+    margin: var(--spacing-unit) 0;
+    color: var(--primary-color);
+}
+
+/* Feature Cards */
+.feature-card {
+    background: var(--light-bg);
+    padding: var(--spacing-unit);
+    margin-bottom: var(--spacing-unit);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Team Page Styles */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: calc(var(--spacing-unit) * 2);
+    padding: calc(var(--spacing-unit) * 2) 0;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.member-info h2 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.member-info h3 {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-unit);
+}
+
+.member-description {
+    text-align: left;
+    margin: var(--spacing-unit) 0;
+}
+
+.member-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Expertise Page Styles */
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-unit);
+    margin: var(--spacing-unit) 0;
+}
+
+.expertise-card {
+    padding: var(--spacing-unit);
+    background: var(--light-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Why SABP Page Styles */
+.differentiators-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-unit);
+    margin: var(--spacing-unit) 0;
+}
+
+.differentiator-card {
+    padding: var(--spacing-unit);
+    background: var(--light-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.strategic-vision {
+    background-color: var(--primary-color);
+    color: var(--light-bg);
+    padding: calc(var(--spacing-unit) * 2) 0;
+    text-align: center;
+    margin: calc(var(--spacing-unit) * 2) 0;
+}
+
+/* Contact Page Styles */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: calc(var(--spacing-unit) * 2);
+    margin: var(--spacing-unit) 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-unit);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.submit-button {
+    background-color: var(--primary-color);
+    color: var(--light-bg);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.submit-button:hover {
+    opacity: 0.9;
+}
+
+/* Resources Page Styles */
+.insights-grid,
+.knowledge-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-unit);
+    margin: var(--spacing-unit) 0;
+}
+
+.insight-card,
+.knowledge-card {
+    padding: var(--spacing-unit);
+    background: var(--light-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.featured-quote {
+    font-style: italic;
+    color: var(--primary-color);
+    margin: var(--spacing-unit) 0;
+}
+
+/* Footer */
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--spacing-unit);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-unit);
+}
+
+.footer-contact {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-unit);
+}
+
+.contact-details {
+    color: var(--light-bg);
+}
+
+.contact-details a {
+    color: var(--light-bg);
+    text-decoration: none;
+    display: block;
+    margin: 0.25rem 0;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+.footer-motto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: var(--spacing-unit);
+    margin-top: var(--spacing-unit);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .services-grid,
+    .team-grid,
+    .expertise-grid,
+    .differentiators-grid,
+    .insights-grid,
+    .knowledge-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+    
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
+    .services-grid,
+    .team-grid,
+    .expertise-grid,
+    .differentiators-grid,
+    .insights-grid,
+    .knowledge-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-contact {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact SABP - Get in touch with our team of experienced business advisors">
+    <title>Contact Us - SABP</title>
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="../index.html">SABP</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services/index.html">Our Services</a></li>
+                <li><a href="expertise.html">Our Expertise</a></li>
+                <li><a href="team.html">Leadership Team</a></li>
+                <li><a href="why-sabp.html">Why SABP?</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <!-- Contact Hero -->
+        <section class="contact-hero">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p class="contact-intro">Let's see a bigger picture together. Get in touch with our team of experienced entrepreneurs.</p>
+            </div>
+        </section>
+
+        <!-- Contact Content -->
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <h2>Send Us a Message</h2>
+                        <form class="contact-form" onsubmit="return validateForm(this)">
+                            <div class="form-group">
+                                <label for="name">Name*</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company*</label>
+                                <input type="text" id="company" name="company" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email*</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Service Interest</label>
+                                <select id="service" name="service">
+                                    <option value="">Select a service</option>
+                                    <option value="transformation">Transformation & Innovation</option>
+                                    <option value="growth">Dynamic Growth</option>
+                                    <option value="operations">Operational Excellence</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message*</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-button">Send Message</button>
+                        </form>
+                    </div>
+
+                    <!-- Direct Contact -->
+                    <div class="direct-contact">
+                        <h2>Direct Contact</h2>
+                        
+                        <div class="team-contact-card">
+                            <h3>Arnaud Grobet</h3>
+                            <p>Founding Partner</p>
+                            <div class="contact-links">
+                                <a href="tel:+97154200101">+971 54 200 10 01</a>
+                                <a href="tel:+41792008360">+41 79 200 83 60</a>
+                                <a href="mailto:arnaud@sabp.ch">arnaud@sabp.ch</a>
+                            </div>
+                        </div>
+
+                        <div class="team-contact-card">
+                            <h3>Shahram Sabeti</h3>
+                            <p>Partner</p>
+                            <div class="contact-links">
+                                <a href="tel:+41798746810">+41 79 874 68 10</a>
+                                <a href="mailto:shahram@sabp.ch">shahram@sabp.ch</a>
+                            </div>
+                        </div>
+
+                        <div class="team-contact-card">
+                            <h3>Yves Froppier</h3>
+                            <p>Partner</p>
+                            <div class="contact-links">
+                                <a href="tel:+41786619131">+41 78 661 91 31</a>
+                                <a href="mailto:yves@sabp.ch">yves@sabp.ch</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Philosophy -->
+        <section class="contact-philosophy">
+            <div class="container">
+                <blockquote>
+                    <p>"Sharing everything we know to help others see a bigger picture.</p>
+                    <p>Whether it's ideas, information, knowledge or enthusiasm,</p>
+                    <p>We love to share and nurture relationships."</p>
+                </blockquote>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <div class="contact-details">
+                    <p>Arnaud Grobet</p>
+                    <a href="tel:+97154200101">+971 54 200 10 01</a>
+                    <a href="tel:+41792008360">+41 79 200 83 60</a>
+                    <a href="mailto:arnaud@sabp.ch">arnaud@sabp.ch</a>
+                </div>
+                <div class="contact-details">
+                    <p>Shahram Sabeti</p>
+                    <a href="tel:+41798746810">+41 79 874 68 10</a>
+                    <a href="mailto:shahram@sabp.ch">shahram@sabp.ch</a>
+                </div>
+                <div class="contact-details">
+                    <p>Yves Froppier</p>
+                    <a href="tel:+41786619131">+41 78 661 91 31</a>
+                    <a href="mailto:yves@sabp.ch">yves@sabp.ch</a>
+                </div>
+            </div>
+            <div class="footer-motto">
+                <p>"Sharing everything we know to help others see a bigger picture."</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SABP. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
